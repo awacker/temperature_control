@@ -1,0 +1,608 @@
+Tue Aug 23 20:56:21 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 20:56:21 2016] ***
+Tue Aug 23 20:56:21 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 20:56:21 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 20:56:21 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 20:56:21 2016 - machine: x86_64
+Tue Aug 23 20:56:21 2016 - clock source: unix
+Tue Aug 23 20:56:21 2016 - pcre jit disabled
+Tue Aug 23 20:56:21 2016 - detected number of CPU cores: 1
+Tue Aug 23 20:56:21 2016 - current working directory: /
+Tue Aug 23 20:56:21 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 20:56:21 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 20:56:21 2016 - setgid() to 33
+Tue Aug 23 20:56:21 2016 - setuid() to 33
+Tue Aug 23 20:56:21 2016 - your processes number limit is 7862
+Tue Aug 23 20:56:21 2016 - limiting address space of processes...
+Tue Aug 23 20:56:21 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 20:56:21 2016 - your memory page size is 4096 bytes
+Tue Aug 23 20:56:21 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 20:56:21 2016 - detected max file descriptor number: 1024
+Tue Aug 23 20:56:21 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 20:56:21 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 20:56:21 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 20:56:21 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 20:56:21 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 20:56:21 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 20:56:21 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 20:56:21 2016 - Python main interpreter initialized at 0x72c100
+Tue Aug 23 20:56:21 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 20:56:21 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 20:56:21 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 20:56:21 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 20:56:21 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x72c100 pid: 10977 (default app)
+Tue Aug 23 20:56:21 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 20:56:21 2016 - spawned uWSGI master process (pid: 10977)
+Tue Aug 23 20:56:21 2016 - spawned uWSGI worker 1 (pid: 10984, cores: 1)
+Tue Aug 23 20:56:21 2016 - spawned uWSGI worker 2 (pid: 10985, cores: 1)
+Tue Aug 23 20:56:21 2016 - spawned uWSGI worker 3 (pid: 10986, cores: 1)
+Tue Aug 23 20:56:21 2016 - spawned uWSGI worker 4 (pid: 10987, cores: 1)
+Tue Aug 23 20:56:21 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 20:56:21 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 20:56:21 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 20:56:21 2016 - mapping worker 1 to CPUs: 0
+Tue Aug 23 21:09:11 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:09:12 2016 - worker 1 buried after 1 seconds
+Tue Aug 23 21:09:12 2016 - worker 2 buried after 1 seconds
+Tue Aug 23 21:09:12 2016 - worker 3 buried after 1 seconds
+Tue Aug 23 21:09:12 2016 - worker 4 buried after 1 seconds
+Tue Aug 23 21:09:12 2016 - goodbye to uWSGI.
+Tue Aug 23 21:09:12 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:09:12 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:09:12 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:09:12 2016] ***
+Tue Aug 23 21:09:12 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:09:12 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:09:12 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:09:12 2016 - machine: x86_64
+Tue Aug 23 21:09:12 2016 - clock source: unix
+Tue Aug 23 21:09:12 2016 - pcre jit disabled
+Tue Aug 23 21:09:12 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:09:12 2016 - current working directory: /
+Tue Aug 23 21:09:12 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:09:12 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:09:12 2016 - setgid() to 33
+Tue Aug 23 21:09:12 2016 - setuid() to 33
+Tue Aug 23 21:09:12 2016 - your processes number limit is 7862
+Tue Aug 23 21:09:12 2016 - limiting address space of processes...
+Tue Aug 23 21:09:12 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:09:12 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:09:12 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:09:12 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:09:12 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:09:12 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:09:12 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:09:12 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:09:12 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:09:12 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:09:12 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:09:12 2016 - Python main interpreter initialized at 0x12b5100
+Tue Aug 23 21:09:12 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:09:12 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:09:12 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:09:12 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:09:12 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x12b5100 pid: 11718 (default app)
+Tue Aug 23 21:09:12 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:09:12 2016 - spawned uWSGI master process (pid: 11718)
+Tue Aug 23 21:09:12 2016 - spawned uWSGI worker 1 (pid: 11725, cores: 1)
+Tue Aug 23 21:09:12 2016 - spawned uWSGI worker 2 (pid: 11726, cores: 1)
+Tue Aug 23 21:09:12 2016 - spawned uWSGI worker 3 (pid: 11727, cores: 1)
+Tue Aug 23 21:09:12 2016 - spawned uWSGI worker 4 (pid: 11728, cores: 1)
+Tue Aug 23 21:09:12 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:09:12 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:09:12 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:09:12 2016 - mapping worker 1 to CPUs: 0
+Tue Aug 23 21:12:20 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:12:21 2016 - worker 1 buried after 1 seconds
+Tue Aug 23 21:12:21 2016 - worker 2 buried after 1 seconds
+Tue Aug 23 21:12:21 2016 - worker 3 buried after 1 seconds
+Tue Aug 23 21:12:21 2016 - worker 4 buried after 1 seconds
+Tue Aug 23 21:12:21 2016 - goodbye to uWSGI.
+Tue Aug 23 21:12:21 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:12:21 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:12:22 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:12:22 2016] ***
+Tue Aug 23 21:12:22 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:12:22 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:12:22 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:12:22 2016 - machine: x86_64
+Tue Aug 23 21:12:22 2016 - clock source: unix
+Tue Aug 23 21:12:22 2016 - pcre jit disabled
+Tue Aug 23 21:12:22 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:12:22 2016 - current working directory: /
+Tue Aug 23 21:12:22 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:12:22 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:12:22 2016 - setgid() to 33
+Tue Aug 23 21:12:22 2016 - setuid() to 33
+Tue Aug 23 21:12:22 2016 - your processes number limit is 7862
+Tue Aug 23 21:12:22 2016 - limiting address space of processes...
+Tue Aug 23 21:12:22 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:12:22 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:12:22 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:12:22 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:12:22 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:12:22 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:12:22 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:12:22 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:12:22 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:12:22 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:12:22 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:12:22 2016 - Python main interpreter initialized at 0x1dcb100
+Tue Aug 23 21:12:22 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:12:22 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:12:22 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:12:22 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:12:22 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1dcb100 pid: 12277 (default app)
+Tue Aug 23 21:12:22 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:12:22 2016 - spawned uWSGI master process (pid: 12277)
+Tue Aug 23 21:12:22 2016 - spawned uWSGI worker 1 (pid: 12284, cores: 1)
+Tue Aug 23 21:12:22 2016 - spawned uWSGI worker 2 (pid: 12285, cores: 1)
+Tue Aug 23 21:12:22 2016 - spawned uWSGI worker 3 (pid: 12286, cores: 1)
+Tue Aug 23 21:12:22 2016 - spawned uWSGI worker 4 (pid: 12287, cores: 1)
+Tue Aug 23 21:12:22 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:12:22 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:12:22 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:12:22 2016 - mapping worker 1 to CPUs: 0
+Tue Aug 23 21:13:18 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:13:19 2016 - worker 1 buried after 1 seconds
+Tue Aug 23 21:13:19 2016 - worker 2 buried after 1 seconds
+Tue Aug 23 21:13:19 2016 - worker 3 buried after 1 seconds
+Tue Aug 23 21:13:19 2016 - worker 4 buried after 1 seconds
+Tue Aug 23 21:13:19 2016 - goodbye to uWSGI.
+Tue Aug 23 21:13:19 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:13:19 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:13:20 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:13:20 2016] ***
+Tue Aug 23 21:13:20 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:13:20 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:13:20 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:13:20 2016 - machine: x86_64
+Tue Aug 23 21:13:20 2016 - clock source: unix
+Tue Aug 23 21:13:20 2016 - pcre jit disabled
+Tue Aug 23 21:13:20 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:13:20 2016 - current working directory: /
+Tue Aug 23 21:13:20 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:13:20 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:13:20 2016 - setgid() to 33
+Tue Aug 23 21:13:20 2016 - setuid() to 33
+Tue Aug 23 21:13:20 2016 - your processes number limit is 7862
+Tue Aug 23 21:13:20 2016 - limiting address space of processes...
+Tue Aug 23 21:13:20 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:13:20 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:13:20 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:13:20 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:13:20 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:13:20 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:13:20 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:13:20 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:13:20 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:13:20 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:13:20 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:13:20 2016 - Python main interpreter initialized at 0x1df2100
+Tue Aug 23 21:13:20 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:13:20 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:13:20 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:13:20 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:13:20 2016 - unable to find "application" callable in file main.py
+Tue Aug 23 21:13:20 2016 - unable to load app 0 (mountpoint='') (callable not found or import error)
+Tue Aug 23 21:13:20 2016 - *** no app loaded. going in full dynamic mode ***
+Tue Aug 23 21:13:20 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:13:20 2016 - spawned uWSGI master process (pid: 12708)
+Tue Aug 23 21:13:20 2016 - spawned uWSGI worker 1 (pid: 12719, cores: 1)
+Tue Aug 23 21:13:20 2016 - spawned uWSGI worker 2 (pid: 12720, cores: 1)
+Tue Aug 23 21:13:20 2016 - spawned uWSGI worker 3 (pid: 12721, cores: 1)
+Tue Aug 23 21:13:20 2016 - spawned uWSGI worker 4 (pid: 12722, cores: 1)
+Tue Aug 23 21:13:20 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:13:20 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:13:20 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:13:20 2016 - mapping worker 1 to CPUs: 0
+Tue Aug 23 21:13:29 2016 - --- no python application found, check your startup logs for errors ---
+Tue Aug 23 21:13:31 2016 - --- no python application found, check your startup logs for errors ---
+Tue Aug 23 21:13:32 2016 - --- no python application found, check your startup logs for errors ---
+Tue Aug 23 21:13:33 2016 - --- no python application found, check your startup logs for errors ---
+Tue Aug 23 21:13:34 2016 - --- no python application found, check your startup logs for errors ---
+Tue Aug 23 21:18:23 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:18:26 2016 - worker 1 buried after 3 seconds
+Tue Aug 23 21:18:26 2016 - worker 2 buried after 3 seconds
+Tue Aug 23 21:18:26 2016 - worker 3 buried after 3 seconds
+Tue Aug 23 21:18:26 2016 - worker 4 buried after 3 seconds
+Tue Aug 23 21:18:26 2016 - goodbye to uWSGI.
+Tue Aug 23 21:18:26 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:18:26 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:18:27 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:18:27 2016] ***
+Tue Aug 23 21:18:27 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:18:27 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:18:27 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:18:27 2016 - machine: x86_64
+Tue Aug 23 21:18:27 2016 - clock source: unix
+Tue Aug 23 21:18:27 2016 - pcre jit disabled
+Tue Aug 23 21:18:27 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:18:27 2016 - current working directory: /
+Tue Aug 23 21:18:27 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:18:27 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:18:27 2016 - setgid() to 33
+Tue Aug 23 21:18:27 2016 - setuid() to 33
+Tue Aug 23 21:18:27 2016 - your processes number limit is 7862
+Tue Aug 23 21:18:27 2016 - limiting address space of processes...
+Tue Aug 23 21:18:27 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:18:27 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:18:27 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:18:27 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:18:27 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:18:27 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:18:27 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:18:27 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:18:27 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:18:27 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:18:27 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:18:27 2016 - Python main interpreter initialized at 0xbf4100
+Tue Aug 23 21:18:27 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:18:27 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:18:27 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:18:27 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:18:27 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xbf4100 pid: 13219 (default app)
+Tue Aug 23 21:18:27 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:18:27 2016 - spawned uWSGI master process (pid: 13219)
+Tue Aug 23 21:18:27 2016 - spawned uWSGI worker 1 (pid: 13230, cores: 1)
+Tue Aug 23 21:18:27 2016 - spawned uWSGI worker 2 (pid: 13231, cores: 1)
+Tue Aug 23 21:18:27 2016 - spawned uWSGI worker 3 (pid: 13232, cores: 1)
+Tue Aug 23 21:18:27 2016 - spawned uWSGI worker 4 (pid: 13233, cores: 1)
+Tue Aug 23 21:18:27 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:18:27 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:18:27 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:18:27 2016 - mapping worker 1 to CPUs: 0
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+No handlers could be found for logger "tornado.application"
+Tue Aug 23 21:19:06 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /api/v1/temperatures (ip 46.164.170.28) !!!
+Tue Aug 23 21:19:06 2016 - uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+No handlers could be found for logger "tornado.application"
+Tue Aug 23 21:19:27 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /api/v1/temperatures (ip 46.164.170.28) !!!
+Tue Aug 23 21:19:27 2016 - uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+No handlers could be found for logger "tornado.application"
+Tue Aug 23 21:19:27 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /api/v1/temperatures (ip 46.164.170.28) !!!
+Tue Aug 23 21:19:27 2016 - uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+No handlers could be found for logger "tornado.application"
+Tue Aug 23 21:19:27 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /api/v1/temperatures (ip 46.164.170.28) !!!
+Tue Aug 23 21:19:27 2016 - uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+Tue Aug 23 21:27:31 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:27:34 2016 - worker 1 buried after 3 seconds
+Tue Aug 23 21:27:34 2016 - worker 2 buried after 3 seconds
+Tue Aug 23 21:27:34 2016 - worker 3 buried after 3 seconds
+Tue Aug 23 21:27:34 2016 - worker 4 buried after 3 seconds
+Tue Aug 23 21:27:34 2016 - goodbye to uWSGI.
+Tue Aug 23 21:27:34 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:27:34 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:27:34 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:27:34 2016] ***
+Tue Aug 23 21:27:34 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:27:34 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:27:34 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:27:34 2016 - machine: x86_64
+Tue Aug 23 21:27:34 2016 - clock source: unix
+Tue Aug 23 21:27:34 2016 - pcre jit disabled
+Tue Aug 23 21:27:34 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:27:34 2016 - current working directory: /
+Tue Aug 23 21:27:34 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:27:34 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:27:34 2016 - setgid() to 33
+Tue Aug 23 21:27:34 2016 - setuid() to 33
+Tue Aug 23 21:27:34 2016 - your processes number limit is 7862
+Tue Aug 23 21:27:34 2016 - limiting address space of processes...
+Tue Aug 23 21:27:34 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:27:34 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:27:34 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:27:34 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:27:34 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:27:34 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:27:34 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:27:34 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:27:34 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:27:34 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:27:34 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:27:34 2016 - Python main interpreter initialized at 0x234e100
+Tue Aug 23 21:27:34 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:27:34 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:27:34 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:27:34 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:27:34 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x234e100 pid: 14249 (default app)
+Tue Aug 23 21:27:34 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:27:34 2016 - spawned uWSGI master process (pid: 14249)
+Tue Aug 23 21:27:34 2016 - spawned uWSGI worker 1 (pid: 14261, cores: 1)
+Tue Aug 23 21:27:34 2016 - spawned uWSGI worker 2 (pid: 14262, cores: 1)
+Tue Aug 23 21:27:34 2016 - spawned uWSGI worker 3 (pid: 14263, cores: 1)
+Tue Aug 23 21:27:34 2016 - spawned uWSGI worker 4 (pid: 14264, cores: 1)
+Tue Aug 23 21:27:34 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:27:34 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:27:34 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:27:34 2016 - mapping worker 1 to CPUs: 0
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+Tue Aug 23 21:53:07 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:53:10 2016 - worker 1 buried after 3 seconds
+Tue Aug 23 21:53:10 2016 - worker 2 buried after 3 seconds
+Tue Aug 23 21:53:10 2016 - worker 3 buried after 3 seconds
+Tue Aug 23 21:53:10 2016 - worker 4 buried after 3 seconds
+Tue Aug 23 21:53:10 2016 - goodbye to uWSGI.
+Tue Aug 23 21:53:10 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:53:10 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:53:11 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:53:11 2016] ***
+Tue Aug 23 21:53:11 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:53:11 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:53:11 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:53:11 2016 - machine: x86_64
+Tue Aug 23 21:53:11 2016 - clock source: unix
+Tue Aug 23 21:53:11 2016 - pcre jit disabled
+Tue Aug 23 21:53:11 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:53:11 2016 - current working directory: /
+Tue Aug 23 21:53:11 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:53:11 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:53:11 2016 - setgid() to 33
+Tue Aug 23 21:53:11 2016 - setuid() to 33
+Tue Aug 23 21:53:11 2016 - your processes number limit is 7862
+Tue Aug 23 21:53:11 2016 - limiting address space of processes...
+Tue Aug 23 21:53:11 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:53:11 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:53:11 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:53:11 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:53:11 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:53:11 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:53:11 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:53:11 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:53:11 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:53:11 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:53:11 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:53:11 2016 - Python main interpreter initialized at 0x1568100
+Tue Aug 23 21:53:11 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:53:11 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:53:11 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:53:11 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:53:11 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1568100 pid: 15003 (default app)
+Tue Aug 23 21:53:11 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:53:11 2016 - spawned uWSGI master process (pid: 15003)
+Tue Aug 23 21:53:11 2016 - spawned uWSGI worker 1 (pid: 15035, cores: 1)
+Tue Aug 23 21:53:11 2016 - spawned uWSGI worker 2 (pid: 15036, cores: 1)
+Tue Aug 23 21:53:11 2016 - spawned uWSGI worker 3 (pid: 15037, cores: 1)
+Tue Aug 23 21:53:11 2016 - spawned uWSGI worker 4 (pid: 15038, cores: 1)
+Tue Aug 23 21:53:11 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:53:11 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:53:11 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:53:11 2016 - mapping worker 1 to CPUs: 0
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+No handlers could be found for logger "tornado.application"
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+No handlers could be found for logger "tornado.application"
+Tue Aug 23 21:54:30 2016 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /api/v1/temperatures (ip 46.164.170.28) !!!
+Tue Aug 23 21:54:30 2016 - uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+No handlers could be found for logger "tornado.application"
+Tue Aug 23 21:54:57 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:54:58 2016 - worker 1 buried after 1 seconds
+Tue Aug 23 21:55:00 2016 - worker 2 buried after 3 seconds
+Tue Aug 23 21:55:00 2016 - worker 3 buried after 3 seconds
+Tue Aug 23 21:55:00 2016 - worker 4 buried after 3 seconds
+Tue Aug 23 21:55:00 2016 - goodbye to uWSGI.
+Tue Aug 23 21:55:00 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:55:00 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:55:00 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:55:00 2016] ***
+Tue Aug 23 21:55:00 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:55:00 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:55:00 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:55:00 2016 - machine: x86_64
+Tue Aug 23 21:55:00 2016 - clock source: unix
+Tue Aug 23 21:55:00 2016 - pcre jit disabled
+Tue Aug 23 21:55:00 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:55:00 2016 - current working directory: /
+Tue Aug 23 21:55:00 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:55:00 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:55:00 2016 - setgid() to 33
+Tue Aug 23 21:55:00 2016 - setuid() to 33
+Tue Aug 23 21:55:00 2016 - your processes number limit is 7862
+Tue Aug 23 21:55:00 2016 - limiting address space of processes...
+Tue Aug 23 21:55:00 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:55:00 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:55:00 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:55:00 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:55:00 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:55:00 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:55:00 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:55:00 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:55:00 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:55:00 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:55:00 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:55:00 2016 - Python main interpreter initialized at 0x251b100
+Tue Aug 23 21:55:00 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:55:00 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:55:00 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:55:00 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:55:00 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x251b100 pid: 15469 (default app)
+Tue Aug 23 21:55:00 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:55:00 2016 - spawned uWSGI master process (pid: 15469)
+Tue Aug 23 21:55:00 2016 - spawned uWSGI worker 1 (pid: 15481, cores: 1)
+Tue Aug 23 21:55:00 2016 - spawned uWSGI worker 2 (pid: 15482, cores: 1)
+Tue Aug 23 21:55:00 2016 - spawned uWSGI worker 3 (pid: 15483, cores: 1)
+Tue Aug 23 21:55:00 2016 - spawned uWSGI worker 4 (pid: 15484, cores: 1)
+Tue Aug 23 21:55:00 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:55:00 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:55:00 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:55:00 2016 - mapping worker 1 to CPUs: 0
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+Tue Aug 23 21:56:23 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:56:26 2016 - worker 1 buried after 3 seconds
+Tue Aug 23 21:56:26 2016 - worker 2 buried after 3 seconds
+Tue Aug 23 21:56:26 2016 - worker 3 buried after 3 seconds
+Tue Aug 23 21:56:26 2016 - worker 4 buried after 3 seconds
+Tue Aug 23 21:56:26 2016 - goodbye to uWSGI.
+Tue Aug 23 21:56:26 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:56:26 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:56:26 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:56:26 2016] ***
+Tue Aug 23 21:56:26 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:56:26 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:56:26 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:56:26 2016 - machine: x86_64
+Tue Aug 23 21:56:26 2016 - clock source: unix
+Tue Aug 23 21:56:26 2016 - pcre jit disabled
+Tue Aug 23 21:56:26 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:56:26 2016 - current working directory: /
+Tue Aug 23 21:56:26 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:56:26 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:56:26 2016 - setgid() to 33
+Tue Aug 23 21:56:26 2016 - setuid() to 33
+Tue Aug 23 21:56:26 2016 - your processes number limit is 7862
+Tue Aug 23 21:56:26 2016 - limiting address space of processes...
+Tue Aug 23 21:56:26 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:56:26 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:56:26 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:56:26 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:56:26 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:56:26 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:56:26 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:56:26 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:56:26 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:56:26 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:56:26 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:56:26 2016 - Python main interpreter initialized at 0x129f100
+Tue Aug 23 21:56:26 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:56:26 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:56:26 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:56:26 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:56:27 2016 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x129f100 pid: 15912 (default app)
+Tue Aug 23 21:56:27 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:56:27 2016 - spawned uWSGI master process (pid: 15912)
+Tue Aug 23 21:56:27 2016 - spawned uWSGI worker 1 (pid: 15945, cores: 1)
+Tue Aug 23 21:56:27 2016 - spawned uWSGI worker 2 (pid: 15946, cores: 1)
+Tue Aug 23 21:56:27 2016 - spawned uWSGI worker 3 (pid: 15947, cores: 1)
+Tue Aug 23 21:56:27 2016 - spawned uWSGI worker 4 (pid: 15948, cores: 1)
+Tue Aug 23 21:56:27 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:56:27 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:56:27 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:56:27 2016 - mapping worker 1 to CPUs: 0
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+Tue Aug 23 21:58:41 2016 - SIGINT/SIGQUIT received...killing workers...
+Tue Aug 23 21:58:44 2016 - worker 1 buried after 3 seconds
+Tue Aug 23 21:58:44 2016 - worker 2 buried after 3 seconds
+Tue Aug 23 21:58:44 2016 - worker 3 buried after 3 seconds
+Tue Aug 23 21:58:44 2016 - worker 4 buried after 3 seconds
+Tue Aug 23 21:58:44 2016 - goodbye to uWSGI.
+Tue Aug 23 21:58:44 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/socket removed.
+Tue Aug 23 21:58:44 2016 - VACUUM: unix socket /run/uwsgi/app/xxxxxx.com/app.socket removed.
+Tue Aug 23 21:58:44 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:58:44 2016] ***
+Tue Aug 23 21:58:44 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:58:44 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:58:44 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:58:44 2016 - machine: x86_64
+Tue Aug 23 21:58:44 2016 - clock source: unix
+Tue Aug 23 21:58:44 2016 - pcre jit disabled
+Tue Aug 23 21:58:44 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:58:44 2016 - current working directory: /
+Tue Aug 23 21:58:44 2016 - writing pidfile to /run/uwsgi/app/xxxxxx.com/pid
+Tue Aug 23 21:58:44 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:58:44 2016 - setgid() to 33
+Tue Aug 23 21:58:44 2016 - setuid() to 33
+Tue Aug 23 21:58:44 2016 - your processes number limit is 7862
+Tue Aug 23 21:58:44 2016 - limiting address space of processes...
+Tue Aug 23 21:58:44 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:58:44 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:58:44 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:58:44 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:58:44 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:58:44 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:58:44 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/xxxxxx.com/socket fd 10
+Tue Aug 23 21:58:44 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:58:44 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:58:44 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:58:44 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:58:44 2016 - Python main interpreter initialized at 0x881100
+Tue Aug 23 21:58:44 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:58:44 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:58:44 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:58:44 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:58:45 2016 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x881100 pid: 16414 (default app)
+Tue Aug 23 21:58:45 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:58:45 2016 - spawned uWSGI master process (pid: 16414)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 1 (pid: 16560, cores: 1)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 2 (pid: 16563, cores: 1)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 3 (pid: 16564, cores: 1)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 4 (pid: 16565, cores: 1)
+Tue Aug 23 21:58:45 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:58:45 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:58:45 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:58:45 2016 - mapping worker 1 to CPUs: 0
+Tue Aug 23 21:58:45 2016 - *** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 23 21:58:45 2016] ***
+Tue Aug 23 21:58:45 2016 - compiled with version: 4.8.2 on 23 March 2014 17:15:32
+Tue Aug 23 21:58:45 2016 - os: Linux-3.13.0-92-generic #139-Ubuntu SMP Tue Jun 28 20:42:26 UTC 2016
+Tue Aug 23 21:58:45 2016 - nodename: ip-172-31-17-33
+Tue Aug 23 21:58:45 2016 - machine: x86_64
+Tue Aug 23 21:58:45 2016 - clock source: unix
+Tue Aug 23 21:58:45 2016 - pcre jit disabled
+Tue Aug 23 21:58:45 2016 - detected number of CPU cores: 1
+Tue Aug 23 21:58:45 2016 - current working directory: /
+Tue Aug 23 21:58:45 2016 - writing pidfile to /run/uwsgi/app/zzz-xxxxxx.com/pid
+Tue Aug 23 21:58:45 2016 - detected binary path: /usr/bin/uwsgi-core
+Tue Aug 23 21:58:45 2016 - setgid() to 33
+Tue Aug 23 21:58:45 2016 - setuid() to 33
+Tue Aug 23 21:58:45 2016 - your processes number limit is 7862
+Tue Aug 23 21:58:45 2016 - limiting address space of processes...
+Tue Aug 23 21:58:45 2016 - your process address space limit is 536870912 bytes (512 MB)
+Tue Aug 23 21:58:45 2016 - your memory page size is 4096 bytes
+Tue Aug 23 21:58:45 2016 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Tue Aug 23 21:58:45 2016 - detected max file descriptor number: 1024
+Tue Aug 23 21:58:45 2016 - lock engine: pthread robust mutexes
+Tue Aug 23 21:58:45 2016 - thunder lock: disabled (you can enable it with --thunder-lock)
+Tue Aug 23 21:58:45 2016 - uwsgi socket 0 bound to UNIX address /run/uwsgi/app/zzz-xxxxxx.com/socket fd 10
+Tue Aug 23 21:58:45 2016 - uwsgi socket 1 bound to UNIX address /run/uwsgi/app/zzz-xxxxxx.com/app.socket fd 11
+Tue Aug 23 21:58:45 2016 - Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+Tue Aug 23 21:58:45 2016 - Set PythonHome to /opt/www/temperature_control/.env
+Tue Aug 23 21:58:45 2016 - *** Python threads support is disabled. You can enable it with --enable-threads ***
+Tue Aug 23 21:58:45 2016 - Python main interpreter initialized at 0x1eaf0f0
+Tue Aug 23 21:58:45 2016 - your server socket listen backlog is limited to 100 connections
+Tue Aug 23 21:58:45 2016 - your mercy for graceful operations on workers is 60 seconds
+Tue Aug 23 21:58:45 2016 - mapped 363960 bytes (355 KB) for 4 cores
+Tue Aug 23 21:58:45 2016 - *** Operational MODE: preforking ***
+Tue Aug 23 21:58:45 2016 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1eaf0f0 pid: 16581 (default app)
+Tue Aug 23 21:58:45 2016 - *** uWSGI is running in multiple interpreter mode ***
+Tue Aug 23 21:58:45 2016 - spawned uWSGI master process (pid: 16581)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 1 (pid: 16614, cores: 1)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 2 (pid: 16615, cores: 1)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 3 (pid: 16616, cores: 1)
+Tue Aug 23 21:58:45 2016 - spawned uWSGI worker 4 (pid: 16617, cores: 1)
+Tue Aug 23 21:58:45 2016 - mapping worker 4 to CPUs: 0
+Tue Aug 23 21:58:45 2016 - mapping worker 3 to CPUs: 0
+Tue Aug 23 21:58:45 2016 - mapping worker 2 to CPUs: 0
+Tue Aug 23 21:58:45 2016 - mapping worker 1 to CPUs: 0
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+No handlers could be found for logger "tornado.access"
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "
+/opt/www/temperature_control/.env/local/lib/python2.7/site-packages/pymongo/topology.py:143: UserWarning: MongoClient opened before fork. Create MongoClient with connect=False, or create client after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#using-pymongo-with-multiprocessing>
+  "MongoClient opened before fork. Create MongoClient "

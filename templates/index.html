@@ -1,22 +1,37 @@
 <!doctype html>
 <html>
-   <body>
+    <head>
+	<style type="text/css">
+	    pre {
+		color: #8fff00; 
+		background-color: #37333e;
+		padding: 10px;
+	    }
+	</style>
+    </head>
+    <body>
    
-      <h1>MongoDB RESTful API Example</h1>
-      
+      <h1>Temperature Control (MongoDB->Tornado->RESTful API Example)</h1>
+
       <p>      
       Get Temperatures List [http Method GET] <a href="{{path}}">{{path}}</a>
       </p>
-      <pre style="color: red; background-color: yellow;">
+      <pre>
       curl {{path}}
       </pre> 
      
       <p>      
       Create New record of Temperatures [http Method POST] to {{path}}      
       </p>   
-      <pre style="color: red; background-color: yellow;">
+      <pre>
       curl -i -H "Content-Type:application/json" -X POST -d "{\"device_id\":\"123\", \"temperature\":80}" {{path}}
       </pre>
+
+	<br><br><br>
+      <p>
+      Source code: <a href="https://github.com/awacker/temperature_control">https://github.com/awacker/temperature_control</a>
+      </p>
+
            
-   </body>
+    </body>
 </html>

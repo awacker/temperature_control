@@ -1,0 +1,21 @@
+server {
+        listen          80;
+        server_name     @HOST_NAME@;
+        access_log @PROJECT_PATH@/logs/access.log;
+        error_log @PROJECT_PATH@/logs/error.log;
+
+        location / {
+            uwsgi_pass      unix:///run/uwsgi/app/@HOST_NAME@/app.socket;
+            include         uwsgi_params;
+            uwsgi_param     UWSGI_SCHEME $scheme;
+            uwsgi_param     SERVER_SOFTWARE    nginx/$nginx_version;
+
+        }
+
+        location /static {
+            root   @PROJECT_PATH@/static/;
+            index  index.html index.htm;
+
+        }
+
+}

@@ -4,7 +4,7 @@ Created on 08/17/2016
 @author: andrey.vaker
 '''
 import os
-from tornado import ioloop, web
+from tornado import ioloop, web, wsgi
 from pymongo import MongoClient
 import json
 from bson import json_util
@@ -45,17 +45,21 @@ settings = {
     "debug" : True
 }
 
-def main():
-    application = web.Application([
+app = web.Application([
     (r'/', IndexHandler),
     (r'/index', IndexHandler),
     (REST_PATH,TemperaturesHandler),
     ], **settings)
-    http_server = tornado.httpserver.HTTPServer(application)
-    port = int(os.environ.get("PORT", 5000))
-    http_server.listen(port)
-    ioloop.IOLoop.instance().start() 
+
+application = tornado.wsgi.WSGIAdapter(app)
+
+#def main():
+#    application = app
+#    http_server = tornado.httpserver.HTTPServer(application)
+#    port = int(os.environ.get("PORT", 5000))
+#    http_server.listen(port)
+#    ioloop.IOLoop.instance().start() 
     
     
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
