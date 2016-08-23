@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <h1>MongoDB RESTful API Example</h1>
+      
+      <p>      
+      Get Temperatures List [http Method GET] <a href="{{path}}">{{path}}</a>
+      </p>
+      <pre style="color: red; background-color: yellow;">
+      curl {{path}}
+      </pre> 
+     
+      <p>      
+      Create New record of Temperatures [http Method POST] to {{path}}      
+      </p>   
+      <pre style="color: red; background-color: yellow;">
+      curl -i -H "Content-Type:application/json" -X POST -d "{\"device_id\":\"123\", \"temperature\":80}" {{path}}
+      </pre>
+           
+   </body>
+</html>
