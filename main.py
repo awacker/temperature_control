@@ -17,7 +17,7 @@ MONGODB_DB_NAME = os.environ.get('MLAB_DB_NAME') if os.environ.get('MLAB_DB_NAME
 
 REST_PATH = "/api/v1/temperatures"
 
-client = MongoClient(MONGODB_DB_URL)
+client = MongoClient(MONGODB_DB_URL, connect=False)
 db = client[MONGODB_DB_NAME]
  
 class IndexHandler(web.RequestHandler):

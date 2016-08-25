@@ -1,1 +1,0 @@
-2016/08/23 21:54:57 [error] 15046#0: *7 upstream prematurely closed connection while reading response header from upstream, client: 46.164.170.28, server: xxxxxx.com, request: "GET /api/v1/temperatures HTTP/1.1", upstream: "uwsgi://unix:///run/uwsgi/app/xxxxxx.com/app.socket:", host: "xxxxxx.com", referrer: "http://xxxxxx.com/"
