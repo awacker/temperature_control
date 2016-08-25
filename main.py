@@ -18,10 +18,16 @@ MONGODB_DB_NAME = os.environ.get('MLAB_DB_NAME') if os.environ.get('MLAB_DB_NAME
 
 REST_PATH = "/api/v1/temperatures"
 
-# Logger objects for internal tornado use
-access_log = logging.getLogger("tornado.access")
-app_log = logging.getLogger("tornado.application")
-gen_log = logging.getLogger("tornado.general")
+
+hn = logging.NullHandler()
+hn.setLevel(logging.DEBUG)
+logging.getLogger("tornado.access").addHandler(hn)
+logging.getLogger("tornado.access").propagate = False
+
+# # Logger objects for internal tornado use
+# access_log = logging.getLogger("tornado.access")
+# app_log = logging.getLogger("tornado.application")
+# gen_log = logging.getLogger("tornado.general")
 
 client = MongoClient(MONGODB_DB_URL, connect=False)
 db = client[MONGODB_DB_NAME]
