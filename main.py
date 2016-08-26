@@ -1,6 +1,5 @@
 '''
 Created on 08/17/2016
-
 @author: andrey.vaker
 '''
 import os
