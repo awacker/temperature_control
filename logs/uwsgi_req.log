@@ -1,2 +1,0 @@
-[pid: 23909|app: 0|req: 1/1] 46.164.170.28 () {50 vars in 992 bytes} [Thu Aug 25 19:41:42 2016] GET /api/v1/temperatures => generated 360 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 0)
-[pid: 23906|app: 0|req: 1/2] 46.164.170.28 () {48 vars in 889 bytes} [Thu Aug 25 19:41:42 2016] GET /favicon.ico => generated 939 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 139 bytes (1 switches on core 0)
